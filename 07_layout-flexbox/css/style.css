@@ -61,7 +61,8 @@ body {
 }
 
 .section-offset {
-  margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .hidden {
@@ -72,8 +73,8 @@ body {
 
 /*   HEADER   */
 .header {
-  padding-top: 30px;
-  margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .logo-contacts-wrap {
@@ -90,7 +91,10 @@ body {
 }
 
 .header-nav {
+  justify-content: space-between;
+  text-align: center;
   padding: 27px 45px;
+
 }
 
 .header-list {
@@ -101,7 +105,15 @@ body {
   margin-right: 45px;
 }
 
-.left-header-btn {
+.btn-header-wrap {
+  font-size: 0;
+}
+
+.header-btn {
+  font-size: 16px;
+}
+
+.header-btn:first-child {
   margin-right: 40px;
 }
 
@@ -114,6 +126,7 @@ body {
   padding: 40px;
   width: 573px;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .specials-item:not(:last-child) {
   margin-bottom: 24px;
@@ -128,6 +141,11 @@ body {
   margin-bottom: 47px;
 }
 
+/*   about-us   */
+.about-us-text {
+  max-width: 888px;
+}
+
 
 /*   services   */
 .services-list {
@@ -137,14 +155,16 @@ body {
 .services-item {
   padding: 26px 45px;
   width: 573px;
-}
-
-.services-item:not(:nth-child(n + 3)) {
   margin-bottom: 24px;
+  margin-right: 24px;
 }
 
-.services-item:not(:nth-child(2n)) {
-  margin-right: 24px;
+.services-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.services-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .service-title {
@@ -159,14 +179,16 @@ body {
 .advantages-item {
   width: 276px;
   padding: 116px 42px 32px 45px;
-}
-
-.advantages-item:not(:nth-child(4n)) {
+  margin-bottom: 22px;
   margin-right: 22px;
 }
 
-.advantages-item:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 22px;
+.advantages-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.advantages-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
 /*   placement   */
@@ -176,14 +198,16 @@ body {
 
 .placement-item {
   width: 374px;
-}
-
-.placement-item:not(:nth-child(3n)) {
+  margin-bottom: 24px;
   margin-right: 24px;
 }
 
-.placement-item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 24px;
+.placement-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.placement-item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 .placement-preview-image {
@@ -208,4 +232,11 @@ body {
 
 .country-city {
   margin-bottom: 20px;
+}
+
+.to-all-placements {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 27px;
 }
