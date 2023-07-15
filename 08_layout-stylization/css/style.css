@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'Muller Regular';
+  src: local('Muller Regular'), local('MullerRegular'),
+      url('../fonts/MullerRegular.woff2') format('woff2'),
+      url('../fonts/MullerRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Medium';
+  src: local('Muller Medium'), local('MullerMedium'),
+      url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller Bold';
+  src: local('Muller Bold'), local('MullerBold'),
+      url('../fonts/MullerBold.woff2') format('woff2'),
+      url('../fonts/MullerBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 html {
 	box-sizing: border-box;
 }
@@ -23,18 +55,29 @@ body {
 }
 
 /* global */
+.body {
+  background-color: #F1F1F1;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* .btn-reset {
+.btn-reset {
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-} */
+}
+
+.btn {
+  padding: 13px 20px;
+  border-radius: 10px;
+  outline: 1px solid #CC9933;
+  color: #CC9933;
+}
 
 .flex {
   display: flex;
@@ -44,12 +87,15 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  font-family: 'Muller Regular', sans-serif;
 }
 
 .section-title {
   margin: 0;
   margin-bottom: 20px;
   padding-left: 40px;
+  font-size: 40px;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -88,13 +134,29 @@ body {
 
 .header-phone {
   margin-right: auto;
+  font-family: 'Muller Medium', sans-serif;
+  font-size: 20px;
+  color: #666666;
+}
+
+.account-link {
+  padding-left: 28px;
+  color: #CC9933;
+  background-image: url('../img/keyboard_tab.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 .header-nav {
   justify-content: space-between;
   text-align: center;
-  padding: 27px 45px;
+  padding: 14px 45px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
 
+.nav-menu {
+  align-items: center;
 }
 
 .header-list {
@@ -127,19 +189,70 @@ body {
   width: 573px;
   flex-direction: column;
   justify-content: flex-end;
+  border-radius: 15px;;
 }
 .specials-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
+.special-item-1 {
+  background: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  url('../img/special-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.special-item-2 {
+  background: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  url('../img/special-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.special-item-3 {
+  background: linear-gradient(to top, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  url('../img/special-3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .specials-title {
   margin: 0;
   margin-bottom: 15px;
+  width: 60%;
+  font-family: 'Muller Bold', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.special-item-3 .specials-title {
+  font-size: 60px;
 }
 
 .specials-price {
   margin-bottom: 47px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
 }
+
+.special-item-3 .specials-price {
+  font-size: 30px;
+}
+
+.more-special {
+  width: fit-content;
+  padding-right: 18px;
+  background-image: url('../img/more-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #F0BF5F;
+}
+
 
 /*   about-us   */
 .about-us-text {
@@ -153,10 +266,32 @@ body {
 }
 
 .services-item {
+  min-height: 330px;
   padding: 26px 45px;
+  padding-top: 191px;
   width: 573px;
   margin-bottom: 24px;
   margin-right: 24px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.service-item-1 {
+  background-image: url('../img/services-1.jpg');
+}
+
+.service-item-2 {
+  background-image: url('../img/services-2.jpg');
+}
+
+.service-item-3 {
+  background-image: url('../img/services-3.jpg');
+}
+
+.service-item-4 {
+  background-image: url('../img/services-4.jpg');
 }
 
 .services-item:nth-last-child(-n + 2) {
@@ -169,6 +304,18 @@ body {
 
 .service-title {
   margin: 0;
+  font-family: 'Muller Medium', sans-serif;
+}
+
+.service-title-link {
+  padding-right: 18px;
+  color: #CC9933;
+  font-size: 20px;
+  line-height: 200%;
+  font-weight: 500;
+  background-image: url('../img/more-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 /*   advantages   */
@@ -181,6 +328,10 @@ body {
   padding: 116px 42px 32px 45px;
   margin-bottom: 22px;
   margin-right: 22px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
 }
 
 .advantages-item:nth-child(4n) {
@@ -189,6 +340,38 @@ body {
 
 .advantages-item:nth-last-child(-n + 4) {
   margin-bottom: 0;
+}
+
+.adv-item-1 {
+  background-image: url('../img/advant-1.svg');
+}
+
+.adv-item-2 {
+  background-image: url('../img/advant-2.svg');
+}
+
+.adv-item-3 {
+  background-image: url('../img/advant-3.svg');
+}
+
+.adv-item-4 {
+  background-image: url('../img/advant-4.svg');
+}
+
+.adv-item-5 {
+  background-image: url('../img/advant-5.svg');
+}
+
+.adv-item-6 {
+  background-image: url('../img/advant-6.svg');
+}
+
+.adv-item-7 {
+  background-image: url('../img/advant-7.svg');
+}
+
+.adv-item-8 {
+  background-image: url('../img/advant-8.svg');
 }
 
 /*   placement   */
@@ -200,6 +383,8 @@ body {
   width: 374px;
   margin-bottom: 24px;
   margin-right: 24px;
+  background-color: #ffffff;
+  border-radius: 15px;
 }
 
 .placement-item:nth-child(3n) {
@@ -225,6 +410,10 @@ body {
   margin-bottom: 16px;
 }
 
+.price {
+  font-family: 'Muller Bold', sans-serif;
+}
+
 .price-rating {
   margin-bottom: 16px;
   justify-content: space-between;
@@ -232,6 +421,11 @@ body {
 
 .country-city {
   margin-bottom: 20px;
+  color: #999999;
+}
+
+.from-placememnt {
+  color: #999999;
 }
 
 .to-all-placements {
@@ -239,4 +433,16 @@ body {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 27px;
+  font-size: 20px;
+  color: #ffffff;
+  background-image: url('../img/all-placements.jpg');
+  background-size: cover;
+}
+
+.all-placements-link {
+  padding-right: 18px;
+  font-family: 'Muller Medium', sans-serif;
+  background-image: url('../img/maore-arrow-white.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
 }
