@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Muller Regular';
+  font-family: 'Muller';
   src: local('Muller Regular'), local('MullerRegular'),
       url('../fonts/MullerRegular.woff2') format('woff2'),
       url('../fonts/MullerRegular.woff') format('woff');
@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Muller Medium';
+  font-family: 'Muller';
   src: local('Muller Medium'), local('MullerMedium'),
       url('../fonts/MullerMedium.woff2') format('woff2'),
       url('../fonts/MullerMedium.woff') format('woff');
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'Muller Bold';
+  font-family: 'Muller';
   src: local('Muller Bold'), local('MullerBold'),
       url('../fonts/MullerBold.woff2') format('woff2'),
       url('../fonts/MullerBold.woff') format('woff');
@@ -51,7 +51,7 @@ img {
 
 body {
   min-width: 1200px;
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Muller', sans-serif;
 }
 
 /* global */
@@ -75,7 +75,7 @@ body {
 .btn {
   padding: 13px 20px;
   border-radius: 10px;
-  outline: 1px solid #CC9933;
+  border: 1px solid #CC9933;
   color: #CC9933;
 }
 
@@ -87,7 +87,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  font-family: 'Muller Regular', sans-serif;
 }
 
 .section-title {
@@ -134,33 +133,41 @@ body {
 
 .header-phone {
   margin-right: auto;
-  font-family: 'Muller Medium', sans-serif;
   font-size: 20px;
   color: #666666;
+  font-weight: 500;
 }
 
 .account-link {
-  padding-left: 28px;
+  display: flex;
+  align-items: center;
   color: #CC9933;
-  background-image: url('../img/keyboard_tab.svg');
-  background-repeat: no-repeat;
-  background-position: left center;
+}
+
+.account-link__text {
+  transform: translateY(2px);
+}
+
+.account-link__svg {
+  margin-right: 5px;
 }
 
 .header-nav {
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
   padding: 14px 45px;
   border-radius: 15px;
   background-color: #ffffff;
 }
 
-.nav-menu {
-  align-items: center;
-}
-
 .header-list {
   margin-right: auto;
+}
+
+.header-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
 }
 
 .header-list-item:not(:last-child) {
@@ -184,45 +191,40 @@ body {
   margin-right: 24px;
 }
 .specials-item {
-  margin: 0;
   padding: 40px;
   width: 573px;
   flex-direction: column;
   justify-content: flex-end;
-  border-radius: 15px;;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: flex-start;
 }
 .specials-item:not(:last-child) {
   margin-bottom: 24px;
 }
 
 .special-item-1 {
-  background: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  background-image: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
   url('../img/special-1.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .special-item-2 {
-  background: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  background-image: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
   url('../img/special-2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
 }
 
 .special-item-3 {
-  background: linear-gradient(to top, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
+  background-image: linear-gradient(to top, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%),
   url('../img/special-3.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .specials-title {
   margin: 0;
   margin-bottom: 15px;
-  width: 60%;
+  max-width: 420px;
   font-family: 'Muller Bold', sans-serif;
   font-size: 40px;
   color: #ffffff;
@@ -245,7 +247,6 @@ body {
 }
 
 .more-special {
-  width: fit-content;
   padding-right: 18px;
   background-image: url('../img/more-arrow.svg');
   background-repeat: no-repeat;
@@ -313,9 +314,6 @@ body {
   font-size: 20px;
   line-height: 200%;
   font-weight: 500;
-  background-image: url('../img/more-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 /*   advantages   */
@@ -332,6 +330,10 @@ body {
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: 45px 40px;
+}
+
+.service-title-link__svg {
+  transform: translateY(3px);
 }
 
 .advantages-item:nth-child(4n) {
@@ -396,22 +398,25 @@ body {
 }
 
 .placement-preview-image {
-  margin-bottom: 35px;
+  display: block;
+
 }
 
 .placement-preview-text {
   flex-direction: column;
   padding: 45px;
-  padding-top: 0;
+  padding-top: 32px;
 }
 
 .placement-title {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .price {
-  font-family: 'Muller Bold', sans-serif;
+  font-size: 20px;
 }
 
 .price-rating {
@@ -441,7 +446,6 @@ body {
 
 .all-placements-link {
   padding-right: 18px;
-  font-family: 'Muller Medium', sans-serif;
   background-image: url('../img/maore-arrow-white.svg');
   background-repeat: no-repeat;
   background-position: right center;
