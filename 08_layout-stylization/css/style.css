@@ -59,6 +59,11 @@ body {
   background-color: #F1F1F1;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -83,11 +88,6 @@ body {
   display: flex;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
 
 .section-title {
   margin: 0;
@@ -118,7 +118,7 @@ body {
 
 /*   HEADER   */
 .header {
-  padding-top: 35px;
+  padding-top: 30px;
   padding-bottom: 35px;
 }
 
@@ -309,7 +309,8 @@ body {
 }
 
 .service-title-link {
-  padding-right: 18px;
+  align-items: center;
+  width: fit-content;
   color: #CC9933;
   font-size: 20px;
   line-height: 200%;
@@ -333,7 +334,7 @@ body {
 }
 
 .service-title-link__svg {
-  transform: translateY(3px);
+  transform: translateX(5px);
 }
 
 .advantages-item:nth-child(4n) {
@@ -450,3 +451,6 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
 }
+
+
+/*   ORDER A TOUR   */

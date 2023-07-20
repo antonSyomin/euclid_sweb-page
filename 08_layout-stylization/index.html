@@ -129,7 +129,7 @@
         <ul class="services-list list-reset flex">
           <li class="services-item service-item-1">
             <h3 class="service-title">
-              <a href="#" class="link service-title-link">
+              <a href="#" class="link service-title-link flex">
                 Эксклюзивное обслуживание
                 <svg class="service-title-link__svg" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.767472 1.21114L8.53494 9L0.767472 16.7889" stroke="#F0BF5F" stroke-width="2"/>
@@ -142,7 +142,7 @@
           </li>
           <li class="services-item service-item-2">
             <h3 class="service-title">
-              <a href="#" class="link service-title-link">
+              <a href="#" class="link service-title-link flex">
                 Аренда банкетных залов
                 <svg class="service-title-link__svg" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.767472 1.21114L8.53494 9L0.767472 16.7889" stroke="#F0BF5F" stroke-width="2"/>
@@ -155,7 +155,7 @@
           </li>
           <li class="services-item service-item-3">
             <h3 class="service-title">
-              <a href="#" class="link service-title-link">
+              <a href="#" class="link service-title-link flex">
                 Сауны, бассейны, бани, фитнес-залы
                 <svg class="service-title-link__svg" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.767472 1.21114L8.53494 9L0.767472 16.7889" stroke="#F0BF5F" stroke-width="2"/>
@@ -168,7 +168,7 @@
           </li>
           <li class="services-item service-item-4">
             <h3 class="service-title">
-              <a href="#" class="link service-title-link">
+              <a href="#" class="link service-title-link flex">
                 Охраняемые автомобильные стоянки
                 <svg class="service-title-link__svg" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.767472 1.21114L8.53494 9L0.767472 16.7889" stroke="#F0BF5F" stroke-width="2"/>
@@ -465,6 +465,19 @@
             <a class="all-placements-link">Посмотреть все варианты</a>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="order-tour">
+      <div class="container">
+        <h2>Хочу тур</h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <input type="text">
+          <input type="text">
+          <input type="date">
+          <input type="number" min="1">
+          <input type="number" min="1" max="10">
+          <button class="btn" type="submit">Найти</button>
+        </form>
       </div>
     </section>
   </main>
