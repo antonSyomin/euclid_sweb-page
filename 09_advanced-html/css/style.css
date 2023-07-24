@@ -59,6 +59,10 @@ body {
   background-color: #F1F1F1;
 }
 
+.main {
+  margin-bottom: 40px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -522,7 +526,7 @@ select:not([multiple]) {
 
 /*   CONTACTS   */
 .contacts {
-  padding-bottom: 35px;
+  padding-top: 35px;
 }
 
 .contacts-content {
@@ -574,6 +578,9 @@ select:not([multiple]) {
 
 
 /*   FOOTER   */
+.footer {
+  padding-bottom: 30px;
+}
 .footer-wrapper {
   padding: 45px;
   background-color: #333333;
