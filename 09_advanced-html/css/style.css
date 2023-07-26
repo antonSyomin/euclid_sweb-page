@@ -477,16 +477,10 @@ body {
 
 .order-tour-form {
   padding: 31px 28px;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 15px;
   background-color: #ffffff;
-}
-
-.field-wrapper:not(:last-child) {
-  margin-right: 40px;
-}
-
-.field-wrapper:last-child {
-  margin-right: 54px;
 }
 
 .field-label {
@@ -519,6 +513,11 @@ select:not([multiple]) {
   border-bottom: 1px solid #E9E9E9;
 }
 
+.num-field::-webkit-inner-spin-button,
+.num-field::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
 .btn-order {
   padding: 13px 30px;
 }
@@ -530,42 +529,62 @@ select:not([multiple]) {
 }
 
 .contacts-content {
-  padding: 52px 755px 38px 40px;
+  padding: 45px;
+  justify-content: space-between;
   border-radius: 15px;
   font-style: normal;
   font-size: 16px;
   line-height: 150%;
   background-color: #ffffff;
-  background-image: url('../img/contacts-photo.jpg');
-  background-repeat: no-repeat;
-  background-position: center right 50px;
 }
 
-.contacts-list {
+.contacts-content__address {
+  max-width: 375px;
+  width: 100%;
+}
+
+.contacts-content::after {
+  content: "";
+  width: 653px;
+  background-image: url('../img/contacts-photo.jpg');
+  background-repeat: no-repeat;
+  background-size: over;
+}
+
+.address {
   margin-bottom: 45px;
+  font-style: normal;
 }
 
 .contacts-item {
   padding-bottom: 23px;
+  margin-bottom: 25px;
+  justify-content: space-between;
   border-bottom: 1px solid #E9E9E9;
 }
 
-.contacts-item:not(:first-child) {
-  padding-top: 23px;
+.contacts-item:last-child {
+  margin-bottom: 0;
 }
 
 .contacts-title {
-  min-width: 145px;
   font-size: 20px;
 }
 
 .address-text {
   margin: 0;
+  max-width: 229px;
+  width: 100%;
 }
 
 .contacts-link {
   display: block;
   color: #CC9933;
+}
+
+.contacts-data-wrapper {
+  max-width: 229px;
+  width: 100%;
 }
 
 .contact-label {
@@ -588,7 +607,7 @@ select:not([multiple]) {
   color: #ffffff;
   background-image: url('../img/footer-sun.png');
   background-repeat: no-repeat;
-  background-position: right 177px bottom 0
+  background-position: 731px bottom;
 }
 
 .footer-additional {
@@ -608,7 +627,11 @@ select:not([multiple]) {
   margin-right: auto;
 }
 
-.footer-contacts-wrapper {
+.footer-contacts-list {
+  font-style: normal;
+}
+
+.footer-contacts-item:nth-child(2) {
   margin-bottom: 15px;
 }
 
@@ -622,12 +645,15 @@ select:not([multiple]) {
   font-style: normal;
   margin-bottom: 15px;
   line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-.footer-social-link {
-  display: block;
+.socials-list-item {
+  font-size: 0;
 }
 
-.footer-social-link:not(:last-child) {
+.socials-list-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
