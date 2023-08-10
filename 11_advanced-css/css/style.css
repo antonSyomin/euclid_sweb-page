@@ -287,9 +287,11 @@ body {
 .specials-left-wrap {
   margin-right: 24px;
 }
+
 .specials-item {
   padding: 40px;
   width: 573px;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
   border-radius: 15px;
@@ -298,6 +300,7 @@ body {
   background-size: cover;
   align-items: flex-start;
 }
+
 .specials-item:not(:last-child) {
   margin-bottom: 24px;
 }
@@ -344,15 +347,17 @@ body {
 }
 
 .more-special {
-  padding-right: 18px;
+  padding-right: 15px;
   background-image: url('../img/more-arrow.svg');
   background-repeat: no-repeat;
   background-position: right;
   color: var(--light-gold);
+  transition: padding-right 0.6s;
 }
 
-.more-special:focus {
-  outline: none ;
+.more-special:hover {
+  padding-right: 25px;
+  transition: padding-right 0.6s;
 }
 
 .more-special:active {
@@ -360,6 +365,31 @@ body {
   color: var(--white);
 }
 
+.more-special::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  pointer-events: none;
+}
+
+.more-special:focus::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: opacity 0.6s;
+  opacity: 1;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
 
 /*   about-us   */
 .about-us-text {
@@ -373,6 +403,7 @@ body {
 }
 
 .services-item {
+  position: relative;
   min-height: 330px;
   padding: 26px 45px;
   padding-top: 191px;
@@ -423,8 +454,35 @@ body {
   font-weight: 500;
 }
 
+.service-title-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .service-title-link:focus {
   outline: none;
+}
+
+
+.service-title-link:focus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+  transition: opacity 0.6s;
+  opacity: 1;
 }
 
 .service-title-link:hover {
@@ -438,15 +496,23 @@ body {
 .service-title-link svg {
   transition: stroke 0.3s ease-in-out;
   stroke: var(--gold);
+  transition: transform 0.3s;
 }
 
 .service-title-link:hover svg {
   stroke: var(--light-gold);
+  transform: translateX(10px);
+  transition: transform 0.3s;
 }
 
 .service-title-link:active svg {
   stroke: var(--gold);
 }
+
+.service-title-link__svg {
+  transform: translateX(5px);
+}
+
 
 /*   advantages   */
 .advantages-list {
@@ -462,10 +528,6 @@ body {
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: 45px 40px;
-}
-
-.service-title-link__svg {
-  transform: translateX(5px);
 }
 
 .advantages-item:nth-child(4n) {
