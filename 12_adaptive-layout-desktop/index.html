@@ -140,10 +140,10 @@
               </a>
           </div>
         </div>
-        <form class="footer__form form flex" action="post">
+        <form class="footer__form form flex" method="post" action="https://jsonplaceholder.typicode.com/posts">
         <h2 class="footer__heading section-heading">Оставить&nbsp;заявку</h2>
-        <input class="form__text" type="text" placeholder="Фамилия, имя и отчество*">
-        <input class="form__text" type="text" placeholder="Email*">
+        <input class="form__text" type="text" placeholder="Фамилия, имя и отчество*" required>
+        <input class="form__text" type="text" placeholder="Email*" required>
         <textarea class="form__textarea" placeholder="Сообщение"></textarea>
         <div class="form__wrapper flex">
           <button class="footer__btn btn btn-reset">Отправить данные</button>
