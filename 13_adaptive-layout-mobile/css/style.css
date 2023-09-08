@@ -173,13 +173,12 @@ body {
 }
 
 .header__container  {
-  min-height: 100px;
   padding-top: 14px;
   padding-bottom: 14px;
   align-items: center;
 }
 
-.header__logo {
+.header-logo {
   margin-right: auto  ;
   font-size: 0;
 }
@@ -539,7 +538,7 @@ body {
   padding: 65px 59px 62px 60px;
 }
 
-.questions__text {
+.question__text {
   max-width: 450px;
 }
 
