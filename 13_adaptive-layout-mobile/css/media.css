@@ -1,19 +1,20 @@
-@media(max-width: 1024px)
-{
+@media (max-width: 1200px) {
   .container {
     padding: 0 50px;
   }
 
-  .main {
-    margin-bottom: 80px;
-  }
-
+  /*   HEADER   */
   .header {
-    padding-bottom: 20px;
+    padding: 26px 0;
+    margin-bottom: 40px;
   }
 
   .header__container {
-    padding: 26px 50px;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    margin-right: 0;
   }
 
   .header-logo__img {
@@ -21,7 +22,7 @@
   }
 
   .header__nav {
-    margin-right: 105px;
+    margin-right: 0;
   }
 
   .header-list {
@@ -29,330 +30,118 @@
   }
 
   /*   HERO   */
-
-  .hero {
-    padding-top: 20px;
-  }
-
   .hero__wrapper {
     padding: 160px 77px;
     background-image: url('../img/hero_1024.jpg');
   }
 
   .hero__title {
+    margin-bottom: 16px;
     font-size: 60px;
     line-height: 73px;
-    margin-bottom: 16px;
   }
 
   .hero__text {
     font-size: 20px;
-    line-height: 24px;
     margin-bottom: 60px;
+    line-height: 24px;
   }
 
   .hero__btn {
-    padding: 24.5px 34.5px;
+    padding: 25px 35px;
     font-size: 24px;
-  }
-
-  /*   ABOUT   */
-  .about {
-    padding-top: 20px;
-    padding-bottom: calc(77px / 2);
-  }
-
-  .about__heading {
-    margin-bottom: 25px;
-    line-height: 47px;
-  }
-
-  .about__text {
-    margin-bottom: 59px;
-  }
-
-  .about__wrapper {
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-
-  .about__left-column {
-    min-height: 640px;
-    max-width: 924px;
-    width: 100%;
-    margin-right: 0;
-    background-image: url('../img/about_1024.jpg');
-  }
-
-  .about__right-column {
-    max-width: 924px;
-    width: 100%;
-  }
-
-  .card {
-    padding: 64px 150px 63px 317px;
-    background-position: 75px 63px;
-  }
-
-  /*   STEPS   */
-  .steps {
-    padding-top: calc(77px / 2);
-    padding-bottom: 40px;
-  }
-
-  .steps__text {
-    max-width: 437px;
-    margin-bottom: 25px;
-  }
-
-  .steps__content::after {
-    max-width: 437px;
-    background-image: url('../img/steps_1024.jpg');
-  }
-
-  /*   QUESTIONS   */
-  .questions {
-    padding-top: 40px;
-  }
-
-  .questions__wrapper {
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-
-  .questions__card {
-    padding-top: 65px;
-    padding-left: 60px;
-    padding-right: 65px;
-  }
-
-  .question__text,
-  .question__heading {
-    max-width: 800px;
-  }
-
-  /*   FOOTER   */
-  .footer__form {
-    margin-right: 0;
-  }
-
-  .footer__description {
-    display: none;
-  }
-
-  .footer__btn {
-    padding: 19px 37.5px;
   }
 }
 
-
-@media(max-width: 768px)
-{
-  .header__container {
-    padding: 17px 50px;
+@media (max-width: 920px) {
+  /*   HEADER   */
+  .header {
+    padding: 17px 0;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
 
   .header-logo__img {
     max-width: 110px;
   }
 
-  .header__nav {
-    margin-right: 43px;
-  }
-
   .header-list {
-    font-size: 16px;
-    font-weight: 700;
     gap: 40px;
   }
 
-  /*   HERO   */
-  .hero {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .header__link {
+    font-size: 16px;
+    font-weight: 700;
   }
 
+  /*   HERO   */
   .hero__wrapper {
     padding: 160px 40px;
-    background-image: url('../img/hero_768.jpg');
     border-radius: 24px;
+    background-image: url('../img/hero_768.jpg');
   }
 
   .hero__title {
     font-size: 50px;
     line-height: 61px;
-    margin-bottom: 16px;
   }
 
   .hero__text {
     font-size: 18px;
-    line-height: 22px;
     margin-bottom: 60px;
+    line-height: 22px;
   }
 
-  .hero_btn {
+  .hero__btn {
+    padding: 25px 39px;
     font-size: 23px;
-  }
-
-  /*   STEPS   */
-
-  .about__left-column {
-    min-height: 650px;
-    border-radius: 24px;
-  }
-
-  .about__heading {
-    line-height: 50px;
-  }
-
-  .about__text {
-    margin-bottom: 54px;
-  }
-
-  .content{
-    padding: 34px 40px;
-  }
-
-  .content__text {
-    max-width: 366px;
-  }
-
-  .card {
-    padding: 35px 44px 32px 170px;
-    background-position: 39px 67px;
-    border-radius: 24px;
-  }
-
-  .card-1 {
-    background-image: url('../img/card1_img_768.svg');
-  }
-
-  .card-2 {
-    background-image: url('../img/card2_img_768.svg');
-  }
-
-  /*   STEPS   */
-  .steps__heading {
-    line-height: 67px;
-    margin-bottom: 27px;
-  }
-
-  .steps__content {
-    padding-top: 324px;
-    position: relative;
-  }
-
-  .steps__content::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 768px;
-    min-height: 284px;
-    background-image: url('../img/steps_768.jpg');
-    border-radius: 24px;
-  }
-
-  .steps__text {
-    max-width: max-content;
-  }
-
-  .steps__text .text {
-    display: inline;
-  }
-
-  /*   QUESTIONS   */
-  .questions__card {
-    padding: 35px 65px 33px 40px;
-    border-radius: 32px;
-  }
-
-  /*   FOOTER   */
-  .footer__wrapper {
-    flex-direction: column;
-  }
-
-  .footer__links {
-    order: 2;
-  }
-
-  .footer__logo {
-    margin-bottom: 16px;
-  }
-
-  .footer__form {
-    order: 1;
-    max-width: 541px;
-    margin-bottom: 50px;
-  }
-
-  .footer__nav {
-    display: none;
   }
 }
 
-
-@media(max-width: 320px)
-{
-  /*   GLOBAL   */
+@media (max-width: 720px) {
   .container {
     padding: 0 15px;
   }
 
-  .text {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  .main {
-    margin-bottom: 60px;
-  }
-
   .header {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-radius: 16px;
   }
 
   .header__container {
     flex-wrap: wrap;
-    padding: 17px 15px 40px 15px;
-  }
-
-  .header__wrapper {
-    border-radius: 0 0 16px 16px;
-  }
-
-  .header-logo {
-    order: 1;
-    margin-bottom: 20px;
   }
 
   .header__nav {
-    overflow: scroll;
+    width: 100%;
+    padding-top: 20px;
     order: 3;
+    overflow: scroll;
+  }
+
+  .header__nav::-webkit-scrollbar {
+    display: none;
   }
 
   .header-list {
-    font-size: 16px;
-    line-height: 21px;
     gap: 24px;
   }
 
+  .header__link {
+    line-height: 20px;
+  }
+
   .header__search {
-    order: 2;
-    margin-bottom: 20px;
+    order: 1;
   }
 
-  /*   HERO   */
-  .hero {
-    padding-top: 10px;
-    padding-bottom: 30px;
-  }
-
-  .hero__wrapper {
-    padding: 59px 22px;
-    background-image: url('../img/hero_320.jpg');
-    border-radius: 16px;
+   /*   HERO   */
+   .hero__wrapper {
     text-align: center;
+    padding: 60px 22px;
+    border-radius: 16px;
+    background-image: url('../img/hero_320.jpg');
   }
 
   .hero__title {
@@ -364,7 +153,7 @@
   .hero__text {
     font-size: 12px;
     line-height: 15px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .hero__btn {
@@ -372,242 +161,5 @@
     font-size: 12px;
     line-height: 15px;
     border-radius: 8px;
-  }
-
-  /*   ABOUT   */
-  .about {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .about__heading {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 20px;
-  }
-
-  .about__text {
-    margin-bottom: 14px;
-  }
-
-  .about__left-column {
-    position: relative;
-    min-height: 401px;
-    background-image: none;
-  }
-
-  .about__left-column::before {
-    content: "";
-    position: absolute;
-    max-width: 290px;
-    width: 100%;
-    min-height: 200px;
-    top: 0;
-    left: 0;
-    border-radius: 16px;
-    background-image: url('../img/about_320.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .about__right-column {
-    row-gap: 33px;
-  }
-
-  .content {
-    flex-direction: column;
-    padding: 0;
-    align-items: flex-start;
-    background-color: #FFFFFF;
-  }
-
-  .content__text {
-    margin: 0;
-    margin-bottom: 12px;
-    color: #000000;
-    font-weight: 400;
-  }
-
-  .about__btn {
-    padding: 11px 42px 10px;
-    color: #FF9900;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 8px;
-  }
-
-  .card {
-    border: none;
-    padding: 0;
-    padding-top: 60px;
-    background-position: 0 0;
-  }
-
-  .card__heading {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 500;
-  }
-
-  .card__text {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  .card-1 {
-    background-image: url('../img/card1_img_320.svg');
-  }
-
-  .card-2 {
-    background-image: url('../img/card2_img_320.svg');
-  }
-
-  /*  STEPS   */
-  .steps {
-    padding-top: 29px;
-    padding-bottom: 30px;
-  }
-
-  .steps__heading {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 20px;
-  }
-
-  .steps__content {
-    padding-top: 175px;
-  }
-
-  .steps__content::after {
-    max-width: 290px;
-    min-height: 160px;
-    background-image: url('../img/steps_320.jpg');
-    background-size: contain;
-    border-radius: 16px;
-  }
-
-  .steps__section-heading {
-    margin-bottom: 9px;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 500;
-  }
-
-  .steps__text {
-    margin-bottom: 24px;
-  }
-
-  .steps__btn {
-    padding: 12px 44px;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 8px;
-  }
-
-  .steps__btn {
-    padding: 12.3px 44px;
-    margin: 0;
-    margin-right: 5px;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 8px;
-  }
-
-  .steps__btn--white {
-    padding: 12px 32px;
-    font-size: 12px;
-    line-height: 15px;
-    border-radius: 8px;
-  }
-
-  /*   QUESTIONS   */
-  .questions {
-    padding-top: 30px;
-  }
-
-  .questions__heading {
-    margin-bottom: 19px;
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  .questions__card {
-    padding: 0;
-  }
-
-  .question__heading {
-    margin-bottom: 4px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 500;
-  }
-
-  /*   FOOTER   */
-  .footer__wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .footer__heading {
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: -5px;
-  }
-
-  .footer__form {
-    max-width: 290px;
-    margin-bottom: 25px;
-  }
-
-  .form__text {
-    padding: 14px 20px;
-    font-size: 14px;
-  }
-
-  .form__textarea {
-    padding: 14px 20px;
-    margin: 0;
-    font-size: 14px;
-  }
-
-  .form__wrapper {
-    flex-direction: column;
-    row-gap: 11px;
-  }
-
-  .footer__btn {
-    padding: 12px 19px;
-    font-size: 12px;
-    line-height: 17px;
-    border-radius: 8px;
-  }
-
-  .checkbox__text {
-    line-height: 32px;
-  }
-
-  .footer__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 16px 79.5px;
-    border-top: 1px solid #414141;
-  }
-
-  .footer__logo {
-    max-width: 131px;
-    margin-bottom: 16px;
-  }
-
-  .footer__socials {
-    gap: 17px;
-  }
-
-  .footer__social svg {
-    max-width: 40px;
-    height: fit-content
   }
 }
