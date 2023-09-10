@@ -199,7 +199,7 @@ body {
 .header__link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   left: 50%;
   width: 0;
   height: 2px;
@@ -210,7 +210,7 @@ body {
 
 .header__link:focus {
   outline: 3px solid var(--orange);
-  outline-offset: 7px;
+  outline-offset: 5px;
 }
 
 .header__link:hover::after{
@@ -265,7 +265,7 @@ body {
 
 .nav__search:focus {
   outline-offset: 4px;
-  outline: 3px solid var(--orange);
+  outline: 5px solid var(--orange);
 }
 
 .nav__search:active {
