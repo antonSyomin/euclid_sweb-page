@@ -19,9 +19,35 @@
     background-position: 65px 20px;
     padding-top: 195px;
   }
+
+  /*   QUESTIONS   */
+  .questions__wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .questions__card {
+    padding: 0;
+    padding: 45px 45px 45px 60px;
+  }
+
+  .question__heading {
+    max-width: 100%;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .question__text {
+    max-width: 100%;
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 1200px) {
+  .main {
+    margin-bottom: 80px;
+  }
+
   .container {
     padding: 0 50px;
   }
@@ -142,6 +168,32 @@
   .steps__text {
     margin-bottom: 25px;
   }
+
+  /*   QUESTIONS   */
+  .questions {
+    padding-top: 40px;
+  }
+
+  .questions__wrapper {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .questions__card {
+    padding: 0;
+    padding: 64px 65px 65px 60px;
+  }
+
+  .question__heading {
+    max-width: 100%;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .question__text {
+    max-width: 100%;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -257,6 +309,17 @@
 
   .steps__text {
     margin-bottom: 25px;
+    letter-spacing: -0.3px;
+  }
+
+  /*   QUESTIONS   */
+  .questions__wrapper {
+    gap: 30px;
+  }
+
+  .questions__card {
+    padding: 35px 65px 35px 40px;
+    border-radius: 32px;
   }
 }
 
@@ -366,6 +429,7 @@
   /*   ABOUT   */
   .about {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .about__heading {
@@ -449,5 +513,76 @@
 
   .card-2 {
     background-image: url('../img/card2_img_320.svg');
+  }
+
+  /*   STEPS   */
+  .steps {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .steps__heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .steps__content::before {
+    margin-bottom: 19px;
+    background-image: url('../img/steps_320.jpg');
+    min-height: 160px;
+    border-radius: 16px;
+  }
+
+  .steps__section-heading {
+    margin-bottom: 13px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .steps__text .text {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .steps__btn {
+    padding: 13px 44px;
+    margin-right: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .steps__btn--white {
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  /*   QUESTIONS   */
+  .questions {
+    padding-top: 30px;
+  }
+
+  .questions__heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .questions__card {
+    padding: 0;
+  }
+
+  .question__heading {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .question__text {
+    font-size: 14px;
+    line-height: 28px;
   }
 }
