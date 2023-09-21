@@ -41,6 +41,16 @@
     max-width: 100%;
     font-size: 24px;
   }
+
+  /*   FOOTER   */
+  .footer__links {
+    margin-right: 20px;
+  }
+
+  .footer__btn {
+    margin-right: 10px;
+  }
+
 }
 
 @media (max-width: 1200px) {
@@ -194,6 +204,28 @@
     max-width: 100%;
     font-size: 16px;
   }
+
+  /*   FOOTER   */
+  .footer__wrapper {
+    justify-content:  initial;
+  }
+
+  .footer__links {
+    margin-right: auto;
+  }
+
+  .footer__form {
+    margin-right: 0;
+    max-width: 540px;
+  }
+
+  .footer__btn {
+    padding: 19px calc(75px / 2);
+  }
+
+  .footer__description {
+    display: none;
+  }
 }
 
 @media (max-width: 920px) {
@@ -321,6 +353,28 @@
     padding: 35px 65px 35px 40px;
     border-radius: 32px;
   }
+
+  /*   FOOTER   */
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    margin-bottom: 16px;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__links {
+    order: 2;
+  }
+
+  .footer__form {
+    order: 1;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -395,6 +449,10 @@
 }
 
 @media (max-width: 576px) {
+  .main {
+    margin-bottom: 60px;
+  }
+
   /*   HERO   */
   .hero {
   padding-bottom: 30px;
@@ -584,5 +642,71 @@
   .question__text {
     font-size: 14px;
     line-height: 28px;
+  }
+
+  /*   FOOTER   */
+  .footer__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .footer__heading {
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: -5px;
+  }
+
+  .footer__form {
+    margin-bottom: 16px;
+    padding-bottom: 25px;
+    max-width: 100%;
+    border-bottom: 1px solid #414141;
+  }
+
+  .form__text {
+    padding: 14px 20px;
+  }
+
+  .form__textarea {
+    padding: 14px 20px;
+    margin-bottom: 0;
+  }
+
+  .form__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__btn {
+    margin: 0;
+    padding: 13px 19px;
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: normal;
+    border-radius: 8px;
+  }
+
+  .checkbox__text {
+    line-height: 32px;
+  }
+
+  .footer__logo {
+    max-width: 131px;
+    margin-bottom: 16px;
+  }
+
+  .footer__socials {
+    column-gap: 16px;
+  }
+
+  .footer__social svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
   }
 }
