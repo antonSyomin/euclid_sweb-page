@@ -390,7 +390,7 @@
     width: 100%;
     padding-top: 20px;
     order: 3;
-    overflow: scroll;
+    overflow-x: scroll;
   }
 
   .header__nav::-webkit-scrollbar {
