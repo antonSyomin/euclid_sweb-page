@@ -390,6 +390,7 @@
     width: 100%;
     padding-top: 20px;
     order: 3;
+    color: red;
     overflow-x: hidden;
   }
 
